@@ -15,9 +15,9 @@ body { margin:0; background:var(--fondo); color:var(--texto);
   font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
 main { max-width: 760px; margin: 0 auto; padding: 48px 20px 64px; }
 a { color: var(--violeta); }
-header.marca { display:flex; align-items:center; gap:14px; margin-bottom:40px; text-decoration:none; color:inherit; }
-header.marca svg { width:44px; height:44px; }
-header.marca span { font-weight:700; letter-spacing:.12em; font-size:15px; }
+.marca { display:inline-flex; align-items:center; gap:14px; margin-bottom:40px; text-decoration:none; color:inherit; }
+.marca svg { width:44px; height:44px; }
+.marca span { font-weight:700; letter-spacing:.12em; font-size:15px; }
 h1 { font-size: 34px; line-height:1.2; margin: 0 0 8px; }
 h2 { font-size: 21px; margin: 32px 0 6px; }
 p { margin: 0 0 12px; color: var(--texto); }
@@ -29,20 +29,25 @@ code { font-size: 14px; }
 .app h3 { margin:0; font-size:22px; }
 .app p { margin:4px 0 8px; color:var(--suave); font-size:15px; }
 .app .ligas { font-size:15px; display:flex; gap:16px; flex-wrap:wrap; }
-.idioma { float:right; font-size:15px; }
+.encabezado-aviso { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:8px; }
+.encabezado-aviso p { margin:0; }
+.idioma { display:inline-flex; background:var(--tarjeta); border-radius:999px; padding:4px; gap:2px; }
+.idioma a, .idioma span { font-size:14px; font-weight:700; padding:6px 14px; border-radius:999px; text-decoration:none; }
+.idioma a { color:var(--suave); }
+.idioma a:hover { color:var(--texto); }
+.idioma span { background:var(--violeta); color:#fff; }
 footer { margin-top:56px; color:var(--suave); font-size:14px; }
 </style>
 </head>
 <body><main>
-<a class="marca" href="../../" style="text-decoration:none;color:inherit"><header class="marca"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Noether Studios">
+<header><a class="marca" href="../../"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Noether Studios">
   <rect width="100" height="100" rx="22" fill="#0B0F1A"/>
   <rect x="26" y="24" width="13" height="52" rx="6.5" fill="#F8FAFC"/>
   <rect x="61" y="24" width="13" height="52" rx="6.5" fill="#F8FAFC"/>
   <line x1="32.5" y1="30.5" x2="67.5" y2="69.5" stroke="#F8FAFC" stroke-width="13" stroke-linecap="round"/>
   <circle cx="50" cy="50" r="6.5" fill="#8B5CF6" stroke="#0B0F1A" stroke-width="3"/>
-</svg><span>NOETHER STUDIOS</span></header></a>
-<a class="idioma" href="../privacidad/">Español</a>
-<p><strong>Plates</strong></p>
+</svg><span>NOETHER STUDIOS</span></a></header>
+<div class="encabezado-aviso"><p><strong>Plates</strong></p><nav class="idioma" aria-label="Idioma / Language"><a href="../privacidad/" hreflang="es" lang="es">ES</a><span>EN</span></nav></div>
 <h1>Privacy Policy</h1>
 <p><em>Last updated November 24, 2026</em></p>
 <h2>What we store</h2>
