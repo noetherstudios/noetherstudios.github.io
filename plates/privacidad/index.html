@@ -24,11 +24,26 @@ p { margin: 0 0 12px; color: var(--texto); }
 em { color: var(--suave); font-style: normal; }
 code { font-size: 14px; }
 .lema { color: var(--suave); font-size: 19px; margin-bottom: 36px; }
-.app { display:flex; gap:18px; align-items:center; background:var(--tarjeta); border-radius:22px; padding:20px; }
-.app img { width:76px; height:76px; border-radius:18px; }
-.app h3 { margin:0; font-size:22px; }
-.app p { margin:4px 0 8px; color:var(--suave); font-size:15px; }
-.app .ligas { font-size:15px; display:flex; gap:16px; flex-wrap:wrap; }
+.titulo-grande { font-size: clamp(34px, 7vw, 52px); line-height:1.08; letter-spacing:-.02em; margin:0 0 14px;
+  background: linear-gradient(100deg, #A78BFA, #38BDF8); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.seccion { font-size:13px; font-weight:700; letter-spacing:.14em; color:var(--suave); margin: 8px 0 14px; }
+.apps { display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+.app { position:relative; overflow:hidden; background:var(--tarjeta); border-radius:24px; padding:22px;
+  border:1px solid rgba(255,255,255,.06); }
+.app::before { content:""; position:absolute; inset:-40% -40% auto auto; width:220px; height:220px; border-radius:50%;
+  background: var(--acento); opacity:.14; filter: blur(30px); }
+.app .cabeza { display:flex; gap:14px; align-items:center; margin-bottom:12px; position:relative; }
+.app img { width:64px; height:64px; border-radius:16px; box-shadow: 0 6px 20px rgba(0,0,0,.35); }
+.app h3 { margin:0; font-size:23px; }
+.app .tipo { display:inline-block; margin-top:4px; font-size:12px; font-weight:700; letter-spacing:.06em; color:var(--acento);
+  background: color-mix(in srgb, var(--acento) 16%, transparent); padding:3px 10px; border-radius:999px; }
+.app p { margin:0 0 6px; color:var(--texto); font-size:16px; position:relative; }
+.app .en { color:var(--suave); font-size:14px; margin-bottom:16px; }
+.app .ligas { display:flex; gap:8px; flex-wrap:wrap; position:relative; }
+.app .ligas a { font-size:14px; font-weight:600; text-decoration:none; color:var(--texto);
+  background: rgba(127,127,127,.14); padding:7px 13px; border-radius:999px; }
+.app .ligas a:hover { background: color-mix(in srgb, var(--acento) 25%, transparent); }
+.app .pronto { margin:14px 0 0; font-size:13px; color:var(--suave); }
 .encabezado-aviso { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:8px; }
 .encabezado-aviso p { margin:0; }
 .idioma { display:inline-flex; background:var(--tarjeta); border-radius:999px; padding:4px; gap:2px; }
