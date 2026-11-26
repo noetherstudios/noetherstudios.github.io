@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plates · Condiciones del Servicio</title>
+<link rel="icon" href="../../logo.svg" type="image/svg+xml">
+<style>
+:root { --fondo:#0B0F1A; --tarjeta:#141A28; --texto:#E8ECF3; --suave:#9AA3B5; --violeta:#8B5CF6; --verde:#22C55E; }
+@media (prefers-color-scheme: light) {
+  :root { --fondo:#F6F7FB; --tarjeta:#FFFFFF; --texto:#121722; --suave:#5B6475; }
+}
+* { box-sizing: border-box; }
+body { margin:0; background:var(--fondo); color:var(--texto);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 48px 20px 64px; }
+a { color: var(--violeta); }
+.marca { display:inline-flex; align-items:center; gap:14px; margin-bottom:40px; text-decoration:none; color:inherit; }
+.marca svg { width:44px; height:44px; }
+.marca span { font-weight:700; letter-spacing:.12em; font-size:15px; }
+h1 { font-size: 34px; line-height:1.2; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 32px 0 6px; }
+p { margin: 0 0 12px; color: var(--texto); }
+em { color: var(--suave); font-style: normal; }
+code { font-size: 14px; }
+.lema { color: var(--suave); font-size: 19px; margin-bottom: 36px; }
+.titulo-grande { font-size: clamp(34px, 7vw, 52px); line-height:1.08; letter-spacing:-.02em; margin:0 0 14px;
+  background: linear-gradient(100deg, #A78BFA, #38BDF8); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.seccion { font-size:13px; font-weight:700; letter-spacing:.14em; color:var(--suave); margin: 8px 0 14px; }
+.apps { display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+.app { position:relative; overflow:hidden; background:var(--tarjeta); border-radius:24px; padding:22px;
+  border:1px solid rgba(255,255,255,.06); }
+.app::before { content:""; position:absolute; inset:-40% -40% auto auto; width:220px; height:220px; border-radius:50%;
+  background: var(--acento); opacity:.14; filter: blur(30px); }
+.app .cabeza { display:flex; gap:14px; align-items:center; margin-bottom:12px; position:relative; }
+.app img { width:64px; height:64px; border-radius:16px; box-shadow: 0 6px 20px rgba(0,0,0,.35); }
+.app h3 { margin:0; font-size:23px; }
+.app .tipo { display:inline-block; margin-top:4px; font-size:12px; font-weight:700; letter-spacing:.06em; color:var(--acento);
+  background: color-mix(in srgb, var(--acento) 16%, transparent); padding:3px 10px; border-radius:999px; }
+.app p { margin:0 0 6px; color:var(--texto); font-size:16px; position:relative; }
+.app .en { color:var(--suave); font-size:14px; margin-bottom:16px; }
+.app .ligas { display:flex; gap:8px; flex-wrap:wrap; position:relative; }
+.app .ligas a { font-size:14px; font-weight:600; text-decoration:none; color:var(--texto);
+  background: rgba(127,127,127,.14); padding:7px 13px; border-radius:999px; }
+.app .ligas a:hover { background: color-mix(in srgb, var(--acento) 25%, transparent); }
+.app .pronto { margin:14px 0 0; font-size:13px; color:var(--suave); }
+.encabezado-aviso { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:8px; }
+.encabezado-aviso p { margin:0; }
+.idioma { display:inline-flex; background:var(--tarjeta); border-radius:999px; padding:4px; gap:2px; }
+.idioma a, .idioma span { font-size:14px; font-weight:700; padding:6px 14px; border-radius:999px; text-decoration:none; }
+.idioma a { color:var(--suave); }
+.idioma a:hover { color:var(--texto); }
+.idioma span { background:var(--violeta); color:#fff; }
+footer { margin-top:56px; color:var(--suave); font-size:14px; }
+</style>
+</head>
+<body><main>
+<header><a class="marca" href="../../"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Noether Studios">
+  <rect width="100" height="100" rx="22" fill="#0B0F1A"/>
+  <rect x="26" y="24" width="13" height="52" rx="6.5" fill="#8B5CF6"/>
+  <rect x="61" y="24" width="13" height="52" rx="6.5" fill="#38BDF8"/>
+  <path d="M 32.5 30.5 L 50 50" stroke="#8B5CF6" stroke-width="13" stroke-linecap="round"/>
+  <path d="M 50 50 L 67.5 69.5" stroke="#38BDF8" stroke-width="13" stroke-linecap="butt"/>
+  <path d="M 32.5 30.5 L 50 50" stroke="#8B5CF6" stroke-width="13" stroke-linecap="butt"/>
+  <circle cx="67.5" cy="69.5" r="6.5" fill="#38BDF8"/>
+  <line x1="44.34" y1="55.08" x2="55.66" y2="44.92" stroke="#0B0F1A" stroke-width="2.5"/>
+</svg><span>NOETHER STUDIOS</span></a></header>
+<div class="encabezado-aviso"><p><strong>Plates</strong></p><nav class="idioma" aria-label="Idioma / Language"><span>ES</span><a href="../terms/" hreflang="en" lang="en">EN</a></nav></div>
+<h1>Condiciones del Servicio</h1>
+<p><em>Actualizado el 26 de noviembre de 2026</em></p>
+<p>Estas condiciones explican las reglas para usar <strong>Plates</strong>, una app de Noether Studios. Al usar Plates aceptas estas condiciones y nuestro Aviso de privacidad. Si no estás de acuerdo, no uses la app.</p>
+<h2>Qué es Plates</h2>
+<p>Plates te ayuda a registrar lo que comes, tus metas de calorías y macros, tus entrenamientos, tu peso y cómo te sientes. Es una herramienta de apoyo personal.</p>
+<h2>No es consejo médico</h2>
+<p>Plates <strong>no</strong> es un servicio médico, nutricional ni psicológico, y no sustituye a un profesional de la salud. Las metas, cálculos, sugerencias de rutinas, pesos promedio y patrones de ánimo son estimaciones generales. Antes de empezar una dieta o un programa de ejercicio, sobre todo si tienes alguna condición de salud, consulta a un médico. Haces ejercicio bajo tu propio riesgo: cuida tu técnica y tus límites. Si te sientes mal física o emocionalmente, busca ayuda profesional; en México puedes llamar a la Línea de la Vida al 800 911 2000.</p>
+<h2>Quién puede usarla</h2>
+<p>Debes tener al menos 16 años para usar Plates.</p>
+<h2>Tu cuenta</h2>
+<p>Crear una cuenta es opcional y sirve para respaldar tus datos. Eres responsable de cuidar tu contraseña y de lo que pase con tu cuenta. Puedes borrar tu cuenta cuando quieras desde la app (Perfil → Cuenta y respaldo) o escribiéndonos.</p>
+<h2>Plates Pro (suscripción)</h2>
+<p>Algunas funciones son parte de <strong>Plates Pro</strong>, una suscripción opcional:</p>
+<p>- El cobro lo hace <strong>Google Play</strong> o la <strong>App Store</strong> con tu cuenta de la tienda; nosotros nunca vemos tu tarjeta. - La suscripción <strong>se renueva sola</strong> al final de cada periodo (mensual o anual) hasta que la canceles. - Si hay <strong>prueba gratis</strong>, al terminar se cobra automáticamente salvo que la canceles antes. - Puedes <strong>cancelar</strong> cuando quieras desde la suscripción en Google Play o en los ajustes de tu Apple ID. Seguirás teniendo Pro hasta el final del periodo que ya pagaste. - Los <strong>reembolsos</strong> los maneja la tienda según sus propias reglas. - Si cambiamos el precio, te avisaremos antes y la tienda te pedirá confirmar cuando la ley lo requiera.</p>
+<h2>Anuncios</h2>
+<p>La versión gratis muestra anuncios de Google AdMob. Puedes quitarlos un rato viendo un video o por completo con Plates Pro.</p>
+<h2>Uso aceptable</h2>
+<p>No uses Plates para nada ilegal, no intentes dañar la app ni sus servidores, no intentes entrar a cuentas que no son tuyas y no copies ni revendas la app.</p>
+<h2>Información de terceros</h2>
+<p>Los datos de alimentos vienen en parte de Open Food Facts y de lo que capturan los usuarios, y pueden tener errores. Las fotos de ejercicios vienen de bancos de imágenes libres. Revisa siempre la etiqueta del producto.</p>
+<h2>Propiedad intelectual</h2>
+<p>Plates, su nombre, su diseño y su código son de Noether Studios. Tus datos son tuyos.</p>
+<h2>Cambios y disponibilidad</h2>
+<p>Podemos actualizar la app, cambiar o quitar funciones, o dejar de ofrecerla. Hacemos lo posible para que funcione bien, pero no garantizamos que siempre esté libre de errores o disponible.</p>
+<h2>Limitación de responsabilidad</h2>
+<p>En la medida en que la ley lo permita, Noether Studios no es responsable por daños indirectos ni por decisiones que tomes con base en la información de la app. Nada de esto limita los derechos que te da la ley como consumidor.</p>
+<h2>Cambios a estas condiciones</h2>
+<p>Si cambiamos estas condiciones, actualizaremos la fecha de arriba y, si el cambio es importante, te avisaremos en la app.</p>
+<h2>Ley aplicable</h2>
+<p>Estas condiciones se rigen por las leyes de México.</p>
+<h2>Contacto</h2>
+<p>Para cualquier duda escríbenos a <a href="mailto:noetherstudios@gmail.com">noetherstudios@gmail.com</a>.</p>
+<footer>© 2026 Noether Studios · <a href="mailto:noetherstudios@gmail.com">noetherstudios@gmail.com</a></footer>
+</main></body></html>
